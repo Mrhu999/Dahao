@@ -53,3 +53,12 @@ function renderGallery() {
 
 renderFilters();
 renderGallery();
+const modal = document.getElementById("modal");
+
+function openModal() {
+  modal.style.display = "flex";
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}

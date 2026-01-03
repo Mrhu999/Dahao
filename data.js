@@ -105,9 +105,3 @@ function handleFileUpload() {
     });
   }
 }
-
-  const file = event.target.files[0];  // 获取文件
-  if (file) {
-    console.log('选择的文件:', file.name);  // 打印文件名
-  }
-}

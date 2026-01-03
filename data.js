@@ -67,3 +67,10 @@ window.onload = function() {
   renderFilters();
   renderGallery();
 };
+function handleFileSelect(event) {
+  const file = event.target.files[0];
+  if (file) {
+    console.log('选择的文件:', file.name);
+    // 这里可以进一步添加上传文件的代码
+  }
+}

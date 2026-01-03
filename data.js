@@ -1,12 +1,12 @@
 const works = [
   {
     title: "户外保温杯 · 电商主视觉",
-    img: "images/cup1.jpg",
+    img: "https://picsum.photos/800/600?random=1",
     tags: ["电商", "产品", "场景"]
   },
   {
     title: "礼盒组合 · 商业渲染",
-    img: "images/cup2.jpg",
+    img: "https://picsum.photos/800/600?random=2",
     tags: ["礼盒", "品牌", "电商"]
   }
 ];

@@ -39,3 +39,17 @@
 </div>
 
 <script src="modal.js"></script>
+<!-- 修改弹窗的上传区域 -->
+<div class="upload">
+  <label class="upload-box">
+    成品图（必填）
+    <input type="file" accept="image/*" id="mainImage" onchange="previewImage(this, 'mainPreview')">
+    <!-- 预览容器 -->
+    <div id="mainPreview" class="preview"></div>
+  </label>
+  <label class="upload-box">
+    原始图（可选）
+    <input type="file" accept="image/*" id="originalImage" onchange="previewImage(this, 'originalPreview')">
+    <div id="originalPreview" class="preview"></div>
+  </label>
+</div>

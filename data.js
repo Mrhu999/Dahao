@@ -50,15 +50,20 @@ function renderGallery() {
       gallery.appendChild(card);
     });
 }
+window.onload = function() {
+  const modal = document.getElementById("modal"); // 获取 modal 元素
 
-renderFilters();
-renderGallery();
-const modal = document.getElementById("modal");
+  // 打开弹窗
+  function openModal() {
+    modal.style.display = "flex";
+  }
 
-function openModal() {
-  modal.style.display = "flex";
-}
+  // 关闭弹窗
+  function closeModal() {
+    modal.style.display = "none";
+  }
 
-function closeModal() {
-  modal.style.display = "none";
-}
+  // 渲染过滤器
+  renderFilters();
+  renderGallery();
+};

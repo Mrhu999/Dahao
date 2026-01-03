@@ -74,3 +74,14 @@ function handleFileSelect(event) {
     // 这里可以进一步添加上传文件的代码
   }
 }
+function submitForm() {
+  const title = document.getElementById('title').value;  // 获取标题
+  const tags = document.getElementById('tags').value;    // 获取标签
+  const description = document.getElementById('description').value; // 获取描述
+  const file = document.getElementById('fileInput').files[0];  // 获取文件
+
+  // 这里可以进一步处理上传文件和发布操作
+  console.log('提交数据:', title, tags, description, file);
+
+  // 在这里，你可以通过 Ajax 或者其他方法发送请求到后端
+}

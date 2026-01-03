@@ -112,4 +112,12 @@ function handleFileSelect(event) {
     console.log('选择的文件:', file.name);  // 打印文件名
   }
 }
+// 处理文件选择
+function handleFileSelect(event) {
+    const file = event.target.files[0];  // 获取选择的文件
+    if (file) {
+        console.log("选择的文件:", file.name);  // 显示文件名
+        // 在这里可以进一步进行上传操作，或执行其他逻辑
+    }
+}
 

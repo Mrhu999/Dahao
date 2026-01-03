@@ -37,6 +37,7 @@
     </div>
   </div>
 </div>
+<input type="file" id="fileInput" onchange="handleFileSelect(event)" />
 function handleFileSelect(event) {
   const file = event.target.files[0];
   if (file) {

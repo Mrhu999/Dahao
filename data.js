@@ -105,7 +105,6 @@ function handleFileUpload() {
     });
   }
 }
-const file = document.getElementById('fileInput').files[0]; // 获取文件
 
   const file = event.target.files[0];  // 获取文件
   if (file) {

@@ -1,15 +1,6 @@
 const modal = document.getElementById("modal");
 
 function openModal() {
-  modal.style.display = "flex";
-}
-
-function closeModal() {
-  modal.style.display = "none";
-}
-const modal = document.getElementById("modal");
-
-function openModal() {
   modal.style.display = "flex";  // 显示上传弹窗
 }
 

@@ -41,3 +41,5 @@
 <script src="modal.js"></script>
 <button class="primary" onclick="handleFileUpload()">确认发布</button>
 <input type="file" id="fileInput" />
+<button type="button" onclick="document.getElementById('fileInput').click()">选择文件</button>
+<input type="file" id="fileInput" style="display:none" onchange="handleFileSelect(event)">

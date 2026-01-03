@@ -16,3 +16,26 @@
   <script src="data.js"></script>
 </body>
 </html>
+<button class="add-btn" onclick="openModal()">+</button>
+
+<div class="modal-mask" id="modal">
+  <div class="modal">
+    <h3>发布新作品</h3>
+
+    <div class="upload">
+      <div class="upload-box">成品图（必填）</div>
+      <div class="upload-box">原始图（可选）</div>
+    </div>
+
+    <input type="text" placeholder="标题" />
+    <input type="text" placeholder="标签（空格分隔）" />
+    <textarea placeholder="设计说明 / 提示词"></textarea>
+
+    <div class="actions">
+      <button onclick="closeModal()">取消</button>
+      <button class="primary">确认发布</button>
+    </div>
+  </div>
+</div>
+
+<script src="modal.js"></script>

@@ -85,3 +85,23 @@ function submitForm() {
 
   // 在这里，你可以通过 Ajax 或者其他方法发送请求到后端
 }
+function handleFileUpload() {
+  const formData = new FormData();
+  const file = document.getElementById('fileInput').files[0];
+
+  if (file) {
+    formData.append('file', file);
+
+    fetch('上传API接口', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('上传成功:', data);
+    })
+    .catch(error => {
+      console.error('上传失败:', error);
+    });
+  }
+}

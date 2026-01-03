@@ -37,14 +37,3 @@
     </div>
   </div>
 </div>
-
-<script src="modal.js"></script>
-<button class="primary" onclick="handleFileUpload()">确认发布</button>
-<input type="file" id="fileInput" />
-<button type="button" onclick="document.getElementById('fileInput').click()">选择文件</button>
-<input type="file" id="fileInput" style="display:none" onchange="handleFileSelect(event)">
-<!-- 上传按钮，点击它会触发文件选择框 -->
-<button type="button" class="add-btn" onclick="document.getElementById('fileInput').click()">选择文件</button>
-
-<!-- 隐藏的文件输入框 -->
-<input type="file" id="fileInput" style="display: none" onchange="handleFileSelect(event)">
